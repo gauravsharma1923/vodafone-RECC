@@ -1,0 +1,565 @@
+request:
+
+
+<CommandRequestData xmlns="http://nsn.com/ossbss/charge.once/wsdl/entity/Tis/xsd/1">
+  <Environment>
+    <Parameter name="ApplicationDomain" value="CAO_LDM_00"/>
+    <Parameter name="DefaultOperationNamespace" value="GMF"/>
+  </Environment>
+  <Command>
+    <Transaction>
+      <Operation modifier="Customer" name="ReadRatePrefetchData">
+        <ParameterList>
+          <StringParameter name="CustomerId">126132745</StringParameter>
+          <SymbolicParameter name="SelectionDate" namespace="@">NOW</SymbolicParameter>
+          <BooleanParameter name="IgnoreTerminatedProfiles" namespace="@">true</BooleanParameter>
+        </ParameterList>
+      </Operation>
+    </Transaction>
+  </Command>
+</CommandRequestData>
+response:
+
+
+
+<ns1:CommandResponseData xmlns:ns1="http://nsn.com/ossbss/charge.once/wsdl/entity/Tis/xsd/1" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+  <ns1:CommandResult>
+    <ns1:TransactionResult>
+      <ns1:OperationResult>
+        <ns1:Operation name="Read" modifier="Customer">
+          <ns1:ParameterList>
+            <ns1:StringParameter name="CustomerId">126132745</ns1:StringParameter>
+            <ns1:ShortParameter xsi:type="ns1:ShortParameter" name="billCycleId" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:ShortParameter>
+            <ns1:ShortParameter xsi:type="ns1:ShortParameter" name="billCycleIdAfterSwitch" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">-1</ns1:ShortParameter>
+            <ns1:SymbolicParameter name="billCycleSwitch">MAX_DATEANDTIME</ns1:SymbolicParameter>
+            <ns1:EnumerationValueParameter name="category">ONLINE</ns1:EnumerationValueParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="prefetchFilter" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">-1</ns1:IntParameter>
+            <ns1:StringParameter name="IMSI">404112201915436</ns1:StringParameter>
+            <ns1:DateTimeParameter name="vValidFrom">2015-10-26T13:07:29.000Z</ns1:DateTimeParameter>
+            <ns1:SymbolicParameter name="vInvalidFrom">MAX_DATEANDTIME</ns1:SymbolicParameter>
+            <ns1:EnumerationValueParameter name="bCategory">ONLINE</ns1:EnumerationValueParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="bSeriesId" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:IntParameter>
+            <ns1:DateTimeParameter name="bValidFrom">2015-10-26T13:07:29.000Z</ns1:DateTimeParameter>
+            <ns1:SymbolicParameter name="bInvalidFrom">MAX_DATEANDTIME</ns1:SymbolicParameter>
+            <ns1:DateTimeParameter name="EventTimeOfLastRatedEvent">2017-02-07T18:30:00.000Z</ns1:DateTimeParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" namespace="@" name="Level" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:IntParameter>
+          </ns1:ParameterList>
+        </ns1:Operation>
+        <ns1:Operation name="Read" modifier="ROP">
+          <ns1:ParameterList>
+            <ns1:StringParameter name="CustomerId">126132745</ns1:StringParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="Key" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1</ns1:IntParameter>
+            <ns1:EnumerationValueParameter name="category">ONLINE</ns1:EnumerationValueParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="prefetchFilter" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">-1</ns1:IntParameter>
+            <ns1:BooleanParameter name="AnnoLowCreditWarningSent">false</ns1:BooleanParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="Currency" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:IntParameter>
+            <ns1:StringParameter name="CurrentQoSClass">QOS_DEFAULT</ns1:StringParameter>
+            <ns1:BooleanParameter name="IsAnnounceSecondCurrency">false</ns1:BooleanParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="IsCFMOC" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:IntParameter>
+            <ns1:ListParameter name="LTH_ChargeOfTransactionList">
+              <ns1:StringElement>0</ns1:StringElement>
+              <ns1:StringElement>0</ns1:StringElement>
+              <ns1:StringElement>0</ns1:StringElement>
+              <ns1:StringElement>0</ns1:StringElement>
+              <ns1:StringElement>0</ns1:StringElement>
+              <ns1:StringElement>0</ns1:StringElement>
+              <ns1:StringElement>0</ns1:StringElement>
+              <ns1:StringElement>0</ns1:StringElement>
+              <ns1:StringElement>0</ns1:StringElement>
+              <ns1:StringElement>0</ns1:StringElement>
+              <ns1:StringElement>0</ns1:StringElement>
+              <ns1:StringElement>0</ns1:StringElement>
+              <ns1:StringElement>0</ns1:StringElement>
+              <ns1:StringElement>0</ns1:StringElement>
+              <ns1:StringElement>0</ns1:StringElement>
+              <ns1:StringElement>0</ns1:StringElement>
+              <ns1:StringElement>0</ns1:StringElement>
+              <ns1:StringElement>0</ns1:StringElement>
+              <ns1:StringElement>0</ns1:StringElement>
+              <ns1:StringElement>0</ns1:StringElement>
+              <ns1:StringElement>0</ns1:StringElement>
+              <ns1:StringElement>0</ns1:StringElement>
+              <ns1:StringElement>0</ns1:StringElement>
+              <ns1:StringElement>0</ns1:StringElement>
+              <ns1:StringElement>0</ns1:StringElement>
+              <ns1:StringElement>0</ns1:StringElement>
+              <ns1:StringElement>0</ns1:StringElement>
+              <ns1:StringElement>0</ns1:StringElement>
+              <ns1:StringElement>0</ns1:StringElement>
+              <ns1:StringElement>0</ns1:StringElement>
+            </ns1:ListParameter>
+            <ns1:ListParameter name="LTH_ConsumptionList">
+              <ns1:StringElement>0</ns1:StringElement>
+              <ns1:StringElement>0</ns1:StringElement>
+              <ns1:StringElement>0</ns1:StringElement>
+              <ns1:StringElement>0</ns1:StringElement>
+              <ns1:StringElement>0</ns1:StringElement>
+              <ns1:StringElement>0</ns1:StringElement>
+              <ns1:StringElement>0</ns1:StringElement>
+              <ns1:StringElement>0</ns1:StringElement>
+              <ns1:StringElement>0</ns1:StringElement>
+              <ns1:StringElement>0</ns1:StringElement>
+              <ns1:StringElement>0</ns1:StringElement>
+              <ns1:StringElement>0</ns1:StringElement>
+              <ns1:StringElement>0</ns1:StringElement>
+              <ns1:StringElement>0</ns1:StringElement>
+              <ns1:StringElement>0</ns1:StringElement>
+              <ns1:StringElement>0</ns1:StringElement>
+              <ns1:StringElement>0</ns1:StringElement>
+              <ns1:StringElement>0</ns1:StringElement>
+              <ns1:StringElement>0</ns1:StringElement>
+              <ns1:StringElement>0</ns1:StringElement>
+              <ns1:StringElement>0</ns1:StringElement>
+              <ns1:StringElement>0</ns1:StringElement>
+              <ns1:StringElement>0</ns1:StringElement>
+              <ns1:StringElement>0</ns1:StringElement>
+              <ns1:StringElement>0</ns1:StringElement>
+              <ns1:StringElement>0</ns1:StringElement>
+              <ns1:StringElement>0</ns1:StringElement>
+              <ns1:StringElement>0</ns1:StringElement>
+              <ns1:StringElement>0</ns1:StringElement>
+              <ns1:StringElement>0</ns1:StringElement>
+            </ns1:ListParameter>
+            <ns1:ListParameter name="LTH_ConsumptionVolumeList">
+              <ns1:StringElement>8677718</ns1:StringElement>
+              <ns1:StringElement>1466218</ns1:StringElement>
+              <ns1:StringElement>17125898</ns1:StringElement>
+              <ns1:StringElement>8215825</ns1:StringElement>
+              <ns1:StringElement>8575208</ns1:StringElement>
+              <ns1:StringElement>32146716</ns1:StringElement>
+              <ns1:StringElement>26936070</ns1:StringElement>
+              <ns1:StringElement>12945381</ns1:StringElement>
+              <ns1:StringElement>14490613</ns1:StringElement>
+              <ns1:StringElement>66734669</ns1:StringElement>
+              <ns1:StringElement>68831262</ns1:StringElement>
+              <ns1:StringElement>14267524</ns1:StringElement>
+              <ns1:StringElement>1892452</ns1:StringElement>
+              <ns1:StringElement>1452329</ns1:StringElement>
+              <ns1:StringElement>1074100</ns1:StringElement>
+              <ns1:StringElement>3299955</ns1:StringElement>
+              <ns1:StringElement>6173306</ns1:StringElement>
+              <ns1:StringElement>5693752</ns1:StringElement>
+              <ns1:StringElement>3104361</ns1:StringElement>
+              <ns1:StringElement>2563317</ns1:StringElement>
+              <ns1:StringElement>5231602</ns1:StringElement>
+              <ns1:StringElement>203796</ns1:StringElement>
+              <ns1:StringElement>287837</ns1:StringElement>
+              <ns1:StringElement>2455861</ns1:StringElement>
+              <ns1:StringElement>1655165</ns1:StringElement>
+              <ns1:StringElement>5755414</ns1:StringElement>
+              <ns1:StringElement>3576798</ns1:StringElement>
+              <ns1:StringElement>608252</ns1:StringElement>
+              <ns1:StringElement>11263930</ns1:StringElement>
+              <ns1:StringElement>5541206</ns1:StringElement>
+            </ns1:ListParameter>
+            <ns1:ListParameter name="LTH_TimeOfTransactionList">
+              <ns1:StringElement>07.02.2017 17:25:00</ns1:StringElement>
+              <ns1:StringElement>07.02.2017 17:34:10</ns1:StringElement>
+              <ns1:StringElement>07.02.2017 18:53:52</ns1:StringElement>
+              <ns1:StringElement>07.02.2017 19:23:22</ns1:StringElement>
+              <ns1:StringElement>07.02.2017 20:50:29</ns1:StringElement>
+              <ns1:StringElement>08.02.2017 00:04:47</ns1:StringElement>
+              <ns1:StringElement>08.02.2017 07:57:24</ns1:StringElement>
+              <ns1:StringElement>08.02.2017 11:36:00</ns1:StringElement>
+              <ns1:StringElement>06.02.2017 19:15:07</ns1:StringElement>
+              <ns1:StringElement>06.02.2017 20:54:57</ns1:StringElement>
+              <ns1:StringElement>07.02.2017 06:24:04</ns1:StringElement>
+              <ns1:StringElement>07.02.2017 07:14:05</ns1:StringElement>
+              <ns1:StringElement>07.02.2017 08:47:53</ns1:StringElement>
+              <ns1:StringElement>07.02.2017 09:19:40</ns1:StringElement>
+              <ns1:StringElement>07.02.2017 09:24:05</ns1:StringElement>
+              <ns1:StringElement>07.02.2017 10:24:54</ns1:StringElement>
+              <ns1:StringElement>07.02.2017 11:37:24</ns1:StringElement>
+              <ns1:StringElement>07.02.2017 11:55:16</ns1:StringElement>
+              <ns1:StringElement>07.02.2017 12:01:31</ns1:StringElement>
+              <ns1:StringElement>07.02.2017 12:27:09</ns1:StringElement>
+              <ns1:StringElement>07.02.2017 12:36:06</ns1:StringElement>
+              <ns1:StringElement>07.02.2017 13:00:22</ns1:StringElement>
+              <ns1:StringElement>07.02.2017 13:45:56</ns1:StringElement>
+              <ns1:StringElement>07.02.2017 14:32:41</ns1:StringElement>
+              <ns1:StringElement>07.02.2017 14:48:14</ns1:StringElement>
+              <ns1:StringElement>07.02.2017 15:31:04</ns1:StringElement>
+              <ns1:StringElement>07.02.2017 15:59:02</ns1:StringElement>
+              <ns1:StringElement>07.02.2017 16:19:35</ns1:StringElement>
+              <ns1:StringElement>07.02.2017 16:31:26</ns1:StringElement>
+              <ns1:StringElement>07.02.2017 17:05:47</ns1:StringElement>
+            </ns1:ListParameter>
+            <ns1:ListParameter name="LTH_TypeOfTransactionList">
+              <ns1:StringElement>FBC</ns1:StringElement>
+              <ns1:StringElement>FBC</ns1:StringElement>
+              <ns1:StringElement>FBC</ns1:StringElement>
+              <ns1:StringElement>FBC</ns1:StringElement>
+              <ns1:StringElement>FBC</ns1:StringElement>
+              <ns1:StringElement>FBC</ns1:StringElement>
+              <ns1:StringElement>FBC</ns1:StringElement>
+              <ns1:StringElement>FBC</ns1:StringElement>
+              <ns1:StringElement>FBC</ns1:StringElement>
+              <ns1:StringElement>FBC</ns1:StringElement>
+              <ns1:StringElement>FBC</ns1:StringElement>
+              <ns1:StringElement>FBC</ns1:StringElement>
+              <ns1:StringElement>FBC</ns1:StringElement>
+              <ns1:StringElement>FBC</ns1:StringElement>
+              <ns1:StringElement>FBC</ns1:StringElement>
+              <ns1:StringElement>FBC</ns1:StringElement>
+              <ns1:StringElement>FBC</ns1:StringElement>
+              <ns1:StringElement>FBC</ns1:StringElement>
+              <ns1:StringElement>FBC</ns1:StringElement>
+              <ns1:StringElement>FBC</ns1:StringElement>
+              <ns1:StringElement>FBC</ns1:StringElement>
+              <ns1:StringElement>FBC</ns1:StringElement>
+              <ns1:StringElement>FBC</ns1:StringElement>
+              <ns1:StringElement>FBC</ns1:StringElement>
+              <ns1:StringElement>FBC</ns1:StringElement>
+              <ns1:StringElement>FBC</ns1:StringElement>
+              <ns1:StringElement>FBC</ns1:StringElement>
+              <ns1:StringElement>FBC</ns1:StringElement>
+              <ns1:StringElement>FBC</ns1:StringElement>
+              <ns1:StringElement>FBC</ns1:StringElement>
+            </ns1:ListParameter>
+            <ns1:DateTimeParameter name="PeriodicSMSReminderNextSendDate">2016-12-12T12:34:16.000Z</ns1:DateTimeParameter>
+            <ns1:StringParameter name="SubscriberAnnoId"/>
+            <ns1:StringParameter name="c_EmailID">MANNURAUTELA3110@GMAIL.COM</ns1:StringParameter>
+            <ns1:DateTimeParameter name="c_FirstPDPUseDate">2015-10-26T13:59:56.000Z</ns1:DateTimeParameter>
+            <ns1:StringParameter name="c_IMEI">3522640544335610</ns1:StringParameter>
+            <ns1:BooleanParameter name="c_IsPayG">true</ns1:BooleanParameter>
+            <ns1:DateTimeParameter name="c_LastPDPUseDate">2017-02-08T06:06:00.000Z</ns1:DateTimeParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="c_LowBalCount" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:IntParameter>
+            <ns1:BooleanParameter name="c_NotifyViaEmail">true</ns1:BooleanParameter>
+            <ns1:StringParameter name="c_PaYGtariff">4p/10 KB</ns1:StringParameter>
+            <ns1:StringParameter name="c_PayGStatus">START</ns1:StringParameter>
+            <ns1:DateTimeParameter name="c_ProvisionedDate">2015-10-26T13:44:34.000Z</ns1:DateTimeParameter>
+            <ns1:StringParameter name="c_SubsRATProfile">2G</ns1:StringParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="s_PackageKeyCounter" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">12</ns1:IntParameter>
+            <ns1:DateTimeParameter name="vValidFrom">2015-10-26T13:07:29.000Z</ns1:DateTimeParameter>
+            <ns1:SymbolicParameter name="vInvalidFrom">MAX_DATEANDTIME</ns1:SymbolicParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="c_BillingCycleId" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">919</ns1:IntParameter>
+            <ns1:StringParameter name="s_OfferId">DEL_PO</ns1:StringParameter>
+            <ns1:EnumerationValueParameter name="bCategory">ONLINE</ns1:EnumerationValueParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="bSeriesId" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:IntParameter>
+            <ns1:DateTimeParameter name="bValidFrom">2015-10-26T13:07:29.000Z</ns1:DateTimeParameter>
+            <ns1:SymbolicParameter name="bInvalidFrom">MAX_DATEANDTIME</ns1:SymbolicParameter>
+            <ns1:StructParameter name="NotLimitedAggr_FU">
+              <ns1:LongParameter xsi:type="ns1:LongParameter" name="Balance" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">-15660</ns1:LongParameter>
+            </ns1:StructParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="c_MultipleSessionCounter" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1</ns1:IntParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" namespace="@" name="Level" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:IntParameter>
+          </ns1:ParameterList>
+        </ns1:Operation>
+        <ns1:Operation name="Read" modifier="RPP">
+          <ns1:ParameterList>
+            <ns1:StringParameter name="CustomerId">126132745</ns1:StringParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="OfferProfileKey" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1</ns1:IntParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="Key" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">12</ns1:IntParameter>
+            <ns1:EnumerationValueParameter name="category">ONLINE</ns1:EnumerationValueParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="prefetchFilter" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">-1</ns1:IntParameter>
+            <ns1:StringParameter name="c_MRP"/>
+            <ns1:BooleanParameter name="c_VolumeDeprecated">false</ns1:BooleanParameter>
+            <ns1:BooleanParameter name="c_sendCreateForDB">false</ns1:BooleanParameter>
+            <ns1:LongParameter xsi:type="ns1:LongParameter" name="s_ActivationEndTime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">2240591399999</ns1:LongParameter>
+            <ns1:LongParameter xsi:type="ns1:LongParameter" name="s_ActivationStartTime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1481546056000</ns1:LongParameter>
+            <ns1:StringParameter name="s_CRMTitle">-</ns1:StringParameter>
+            <ns1:BooleanParameter name="s_CanBeSharedByMultipleRops">false</ns1:BooleanParameter>
+            <ns1:BooleanParameter name="s_InsertedViaBatch">false</ns1:BooleanParameter>
+            <ns1:StringParameter name="s_PackageId">MI4G9GBSO</ns1:StringParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="s_PeriodStartPoint" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">20</ns1:IntParameter>
+            <ns1:BooleanParameter name="s_PreActive">false</ns1:BooleanParameter>
+            <ns1:DateTimeParameter name="vValidFrom">2016-12-19T18:30:00.000Z</ns1:DateTimeParameter>
+            <ns1:SymbolicParameter name="vInvalidFrom">MAX_DATEANDTIME</ns1:SymbolicParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="s_FreeOfChargeModifyTasks" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">9437184</ns1:IntParameter>
+            <ns1:BooleanParameter name="s_Touched">true</ns1:BooleanParameter>
+            <ns1:EnumerationValueParameter name="bCategory">ONLINE</ns1:EnumerationValueParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="bSeriesId" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:IntParameter>
+            <ns1:DateTimeParameter name="bValidFrom">2015-10-26T13:07:29.000Z</ns1:DateTimeParameter>
+            <ns1:SymbolicParameter name="bInvalidFrom">MAX_DATEANDTIME</ns1:SymbolicParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="c_AutoTopUpIndex" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:IntParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="c_LastPercentageThresholdNotified" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:IntParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="c_RedirectIndex" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:IntParameter>
+            <ns1:BooleanParameter name="c_RemoveAllBal">false</ns1:BooleanParameter>
+            <ns1:BooleanParameter name="c_RemoveAllExpiry">false</ns1:BooleanParameter>
+            <ns1:LongParameter xsi:type="ns1:LongParameter" name="c_VolumeRenew" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">9663676416</ns1:LongParameter>
+            <ns1:BooleanParameter name="s_Active">true</ns1:BooleanParameter>
+            <ns1:ByteParameter xsi:type="ns1:ByteParameter" name="s_Error" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:ByteParameter>
+            <ns1:DateParameter name="s_ExpireDate">2999-12-31Z</ns1:DateParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="s_Info" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:IntParameter>
+            <ns1:LongParameter xsi:type="ns1:LongParameter" name="s_LastChargedPeriodicFee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:LongParameter>
+            <ns1:LongParameter xsi:type="ns1:LongParameter" name="s_NextPeriodAct" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1487529000000</ns1:LongParameter>
+            <ns1:LongParameter xsi:type="ns1:LongParameter" name="s_OnTouchDate" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1487529000000</ns1:LongParameter>
+            <ns1:StructParameter name="s_PeriodicBonus_FU">
+              <ns1:LongParameter xsi:type="ns1:LongParameter" name="Balance" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">813580454</ns1:LongParameter>
+            </ns1:StructParameter>
+            <ns1:BooleanParameter name="s_Valid">true</ns1:BooleanParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" namespace="@" name="Level" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:IntParameter>
+          </ns1:ParameterList>
+        </ns1:Operation>
+        <ns1:Operation name="Read" modifier="RPP">
+          <ns1:ParameterList>
+            <ns1:StringParameter name="CustomerId">126132745</ns1:StringParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="OfferProfileKey" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1</ns1:IntParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="Key" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">3</ns1:IntParameter>
+            <ns1:EnumerationValueParameter name="category">ONLINE</ns1:EnumerationValueParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="prefetchFilter" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">-1</ns1:IntParameter>
+            <ns1:LongParameter xsi:type="ns1:LongParameter" name="s_ActivationEndTime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">32482492199999</ns1:LongParameter>
+            <ns1:LongParameter xsi:type="ns1:LongParameter" name="s_ActivationStartTime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1445866111000</ns1:LongParameter>
+            <ns1:StringParameter name="s_CRMTitle">-</ns1:StringParameter>
+            <ns1:BooleanParameter name="s_CanBeSharedByMultipleRops">false</ns1:BooleanParameter>
+            <ns1:BooleanParameter name="s_InsertedViaBatch">false</ns1:BooleanParameter>
+            <ns1:StringParameter name="s_PackageId">MANDWFRAT</ns1:StringParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="s_PeriodStartPoint" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">-1</ns1:IntParameter>
+            <ns1:BooleanParameter name="s_PreActive">false</ns1:BooleanParameter>
+            <ns1:DateTimeParameter name="vValidFrom">2015-10-26T13:28:31.000Z</ns1:DateTimeParameter>
+            <ns1:SymbolicParameter name="vInvalidFrom">MAX_DATEANDTIME</ns1:SymbolicParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="s_FreeOfChargeModifyTasks" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:IntParameter>
+            <ns1:BooleanParameter name="s_Touched">false</ns1:BooleanParameter>
+            <ns1:EnumerationValueParameter name="bCategory">ONLINE</ns1:EnumerationValueParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="bSeriesId" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:IntParameter>
+            <ns1:DateTimeParameter name="bValidFrom">2015-10-26T13:07:29.000Z</ns1:DateTimeParameter>
+            <ns1:SymbolicParameter name="bInvalidFrom">MAX_DATEANDTIME</ns1:SymbolicParameter>
+            <ns1:BooleanParameter name="s_Active">true</ns1:BooleanParameter>
+            <ns1:ByteParameter xsi:type="ns1:ByteParameter" name="s_Error" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:ByteParameter>
+            <ns1:DateParameter name="s_ExpireDate">2999-12-31Z</ns1:DateParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="s_Info" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:IntParameter>
+            <ns1:LongParameter xsi:type="ns1:LongParameter" name="s_LastChargedPeriodicFee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:LongParameter>
+            <ns1:LongParameter xsi:type="ns1:LongParameter" name="s_NextPeriodAct" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">32482492199999</ns1:LongParameter>
+            <ns1:LongParameter xsi:type="ns1:LongParameter" name="s_OnTouchDate" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">32482492199000</ns1:LongParameter>
+            <ns1:StructParameter name="s_PeriodicBonus_FU">
+              <ns1:LongParameter xsi:type="ns1:LongParameter" name="Balance" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:LongParameter>
+            </ns1:StructParameter>
+            <ns1:BooleanParameter name="s_Valid">true</ns1:BooleanParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" namespace="@" name="Level" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:IntParameter>
+          </ns1:ParameterList>
+        </ns1:Operation>
+        <ns1:Operation name="Read" modifier="RPP_s_QoSOnTotalUsage">
+          <ns1:ParameterList>
+            <ns1:StringParameter name="CustomerId">126132745</ns1:StringParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="OfferProfileKey" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1</ns1:IntParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="Key" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">11</ns1:IntParameter>
+            <ns1:EnumerationValueParameter name="category">ONLINE</ns1:EnumerationValueParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="prefetchFilter" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">-1</ns1:IntParameter>
+            <ns1:StringParameter name="c_MRP"/>
+            <ns1:LongParameter xsi:type="ns1:LongParameter" name="s_ActivationEndTime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">2240591399999</ns1:LongParameter>
+            <ns1:LongParameter xsi:type="ns1:LongParameter" name="s_ActivationStartTime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1471939433000</ns1:LongParameter>
+            <ns1:StringParameter name="s_CRMTitle">-</ns1:StringParameter>
+            <ns1:BooleanParameter name="s_CanBeSharedByMultipleRops">false</ns1:BooleanParameter>
+            <ns1:BooleanParameter name="s_InsertedViaBatch">false</ns1:BooleanParameter>
+            <ns1:StringParameter name="s_PackageId">MI3G299FU</ns1:StringParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="s_PeriodStartPoint" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">20</ns1:IntParameter>
+            <ns1:BooleanParameter name="s_PreActive">false</ns1:BooleanParameter>
+            <ns1:DateTimeParameter name="vValidFrom">2016-09-19T18:30:00.000Z</ns1:DateTimeParameter>
+            <ns1:SymbolicParameter name="vInvalidFrom">MAX_DATEANDTIME</ns1:SymbolicParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="s_FreeOfChargeModifyTasks" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:IntParameter>
+            <ns1:BooleanParameter name="s_Touched">true</ns1:BooleanParameter>
+            <ns1:EnumerationValueParameter name="bCategory">ONLINE</ns1:EnumerationValueParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="bSeriesId" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:IntParameter>
+            <ns1:DateTimeParameter name="bValidFrom">2015-10-26T13:07:29.000Z</ns1:DateTimeParameter>
+            <ns1:SymbolicParameter name="bInvalidFrom">MAX_DATEANDTIME</ns1:SymbolicParameter>
+            <ns1:LongParameter xsi:type="ns1:LongParameter" name="c_AccumulatedQosTillLastNotity" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:LongParameter>
+            <ns1:LongParameter xsi:type="ns1:LongParameter" name="c_Accumulatedprice" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:LongParameter>
+            <ns1:BooleanParameter name="c_DailyTicketNotificationSent">false</ns1:BooleanParameter>
+            <ns1:LongParameter xsi:type="ns1:LongParameter" name="c_FupAccumulationPostThrottle" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:LongParameter>
+            <ns1:BooleanParameter name="c_IsBillCapThrottled">true</ns1:BooleanParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="c_LastPercentageThresholdNotified" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:IntParameter>
+            <ns1:StringParameter name="c_QoSAction">DEFAULT_QOS</ns1:StringParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="c_RedirectIndex" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:IntParameter>
+            <ns1:BooleanParameter name="s_Active">true</ns1:BooleanParameter>
+            <ns1:ByteParameter xsi:type="ns1:ByteParameter" name="s_Error" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:ByteParameter>
+            <ns1:DateParameter name="s_ExpireDate">2999-12-31Z</ns1:DateParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="s_FreeOfChargePeriods" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:IntParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="s_Info" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:IntParameter>
+            <ns1:LongParameter xsi:type="ns1:LongParameter" name="s_LastChargedPeriodicFee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:LongParameter>
+            <ns1:LongParameter xsi:type="ns1:LongParameter" name="s_LastHandledNotificationThreshold" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:LongParameter>
+            <ns1:LongParameter xsi:type="ns1:LongParameter" name="s_NextPeriodAct" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1487529000000</ns1:LongParameter>
+            <ns1:LongParameter xsi:type="ns1:LongParameter" name="s_OnTouchDate" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1487529000000</ns1:LongParameter>
+            <ns1:StructParameter name="s_PeriodicBonus_FU">
+<-----Pak balance---->
+              <ns1:LongParameter xsi:type="ns1:LongParameter" name="Balance" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">15505</ns1:LongParameter>
+
+            </ns1:StructParameter>
+            <ns1:BooleanParameter name="s_Valid">true</ns1:BooleanParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" namespace="@" name="Level" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:IntParameter>
+          </ns1:ParameterList>
+        </ns1:Operation>
+        <ns1:Operation name="Read" modifier="RPP_s_QoSOnTotalUsage">
+          <ns1:ParameterList>
+            <ns1:StringParameter name="CustomerId">126132745</ns1:StringParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="OfferProfileKey" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1</ns1:IntParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="Key" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">4</ns1:IntParameter>
+            <ns1:EnumerationValueParameter name="category">ONLINE</ns1:EnumerationValueParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="prefetchFilter" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">-1</ns1:IntParameter>
+            <ns1:LongParameter xsi:type="ns1:LongParameter" name="s_ActivationEndTime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">32503652999999</ns1:LongParameter>
+            <ns1:LongParameter xsi:type="ns1:LongParameter" name="s_ActivationStartTime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1445866111000</ns1:LongParameter>
+            <ns1:StringParameter name="s_CRMTitle">-</ns1:StringParameter>
+            <ns1:BooleanParameter name="s_CanBeSharedByMultipleRops">false</ns1:BooleanParameter>
+            <ns1:BooleanParameter name="s_InsertedViaBatch">false</ns1:BooleanParameter>
+            <ns1:StringParameter name="s_PackageId">DailyUsage</ns1:StringParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="s_PeriodStartPoint" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">20</ns1:IntParameter>
+            <ns1:BooleanParameter name="s_PreActive">false</ns1:BooleanParameter>
+            <ns1:DateTimeParameter name="vValidFrom">2015-10-26T14:30:00.000Z</ns1:DateTimeParameter>
+            <ns1:SymbolicParameter name="vInvalidFrom">MAX_DATEANDTIME</ns1:SymbolicParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="s_FreeOfChargeModifyTasks" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:IntParameter>
+            <ns1:BooleanParameter name="s_Touched">true</ns1:BooleanParameter>
+            <ns1:EnumerationValueParameter name="bCategory">ONLINE</ns1:EnumerationValueParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="bSeriesId" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:IntParameter>
+            <ns1:DateTimeParameter name="bValidFrom">2015-10-26T13:07:29.000Z</ns1:DateTimeParameter>
+            <ns1:SymbolicParameter name="bInvalidFrom">MAX_DATEANDTIME</ns1:SymbolicParameter>
+            <ns1:LongParameter xsi:type="ns1:LongParameter" name="c_AccumulatedQosTillLastNotity" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:LongParameter>
+            <ns1:LongParameter xsi:type="ns1:LongParameter" name="c_Accumulatedprice" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:LongParameter>
+            <ns1:BooleanParameter name="c_DailyTicketNotificationSent">false</ns1:BooleanParameter>
+            <ns1:LongParameter xsi:type="ns1:LongParameter" name="c_FupAccumulationPostThrottle" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:LongParameter>
+            <ns1:BooleanParameter name="c_IsBillCapThrottled">true</ns1:BooleanParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="c_LastPercentageThresholdNotified" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:IntParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="c_RedirectIndex" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:IntParameter>
+            <ns1:BooleanParameter name="s_Active">true</ns1:BooleanParameter>
+            <ns1:ByteParameter xsi:type="ns1:ByteParameter" name="s_Error" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:ByteParameter>
+            <ns1:DateParameter name="s_ExpireDate">2999-12-31Z</ns1:DateParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="s_Info" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:IntParameter>
+            <ns1:LongParameter xsi:type="ns1:LongParameter" name="s_LastChargedPeriodicFee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:LongParameter>
+            <ns1:LongParameter xsi:type="ns1:LongParameter" name="s_LastHandledNotificationThreshold" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:LongParameter>
+            <ns1:LongParameter xsi:type="ns1:LongParameter" name="s_NextPeriodAct" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1486578600000</ns1:LongParameter>
+            <ns1:LongParameter xsi:type="ns1:LongParameter" name="s_OnTouchDate" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1486578600000</ns1:LongParameter>
+            <ns1:StructParameter name="s_PeriodicBonus_FU">
+              <ns1:LongParameter xsi:type="ns1:LongParameter" name="Balance" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:LongParameter>
+            </ns1:StructParameter>
+            <ns1:BooleanParameter name="s_Valid">true</ns1:BooleanParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" namespace="@" name="Level" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:IntParameter>
+          </ns1:ParameterList>
+        </ns1:Operation>
+        <ns1:Operation name="Read" modifier="RPP_s_QoSOnTotalUsage">
+          <ns1:ParameterList>
+            <ns1:StringParameter name="CustomerId">126132745</ns1:StringParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="OfferProfileKey" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1</ns1:IntParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="Key" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">5</ns1:IntParameter>
+            <ns1:EnumerationValueParameter name="category">ONLINE</ns1:EnumerationValueParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="prefetchFilter" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">-1</ns1:IntParameter>
+            <ns1:LongParameter xsi:type="ns1:LongParameter" name="s_ActivationEndTime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">32503746599999</ns1:LongParameter>
+            <ns1:LongParameter xsi:type="ns1:LongParameter" name="s_ActivationStartTime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1445867074000</ns1:LongParameter>
+            <ns1:StringParameter name="s_CRMTitle">-</ns1:StringParameter>
+            <ns1:BooleanParameter name="s_CanBeSharedByMultipleRops">false</ns1:BooleanParameter>
+            <ns1:BooleanParameter name="s_InsertedViaBatch">false</ns1:BooleanParameter>
+            <ns1:StringParameter name="s_PackageId">MonthlyUsage</ns1:StringParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="s_PeriodStartPoint" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">20</ns1:IntParameter>
+            <ns1:BooleanParameter name="s_PreActive">false</ns1:BooleanParameter>
+            <ns1:DateTimeParameter name="vValidFrom">2015-11-19T18:30:00.000Z</ns1:DateTimeParameter>
+            <ns1:SymbolicParameter name="vInvalidFrom">MAX_DATEANDTIME</ns1:SymbolicParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="s_FreeOfChargeModifyTasks" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:IntParameter>
+            <ns1:BooleanParameter name="s_Touched">true</ns1:BooleanParameter>
+            <ns1:EnumerationValueParameter name="bCategory">ONLINE</ns1:EnumerationValueParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="bSeriesId" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:IntParameter>
+            <ns1:DateTimeParameter name="bValidFrom">2015-10-26T13:07:29.000Z</ns1:DateTimeParameter>
+            <ns1:SymbolicParameter name="bInvalidFrom">MAX_DATEANDTIME</ns1:SymbolicParameter>
+            <ns1:LongParameter xsi:type="ns1:LongParameter" name="c_AccumulatedQosTillLastNotity" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:LongParameter>
+            <ns1:LongParameter xsi:type="ns1:LongParameter" name="c_Accumulatedprice" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:LongParameter>
+            <ns1:BooleanParameter name="c_DailyTicketNotificationSent">false</ns1:BooleanParameter>
+            <ns1:LongParameter xsi:type="ns1:LongParameter" name="c_FupAccumulationPostThrottle" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:LongParameter>
+            <ns1:BooleanParameter name="c_IsBillCapThrottled">true</ns1:BooleanParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="c_LastPercentageThresholdNotified" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:IntParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="c_RedirectIndex" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:IntParameter>
+            <ns1:BooleanParameter name="s_Active">true</ns1:BooleanParameter>
+            <ns1:ByteParameter xsi:type="ns1:ByteParameter" name="s_Error" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:ByteParameter>
+            <ns1:DateParameter name="s_ExpireDate">2999-12-31Z</ns1:DateParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="s_Info" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:IntParameter>
+            <ns1:LongParameter xsi:type="ns1:LongParameter" name="s_LastChargedPeriodicFee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:LongParameter>
+            <ns1:LongParameter xsi:type="ns1:LongParameter" name="s_LastHandledNotificationThreshold" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:LongParameter>
+            <ns1:LongParameter xsi:type="ns1:LongParameter" name="s_NextPeriodAct" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1487529000000</ns1:LongParameter>
+            <ns1:LongParameter xsi:type="ns1:LongParameter" name="s_OnTouchDate" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1487529000000</ns1:LongParameter>
+            <ns1:StructParameter name="s_PeriodicBonus_FU">
+              <ns1:LongParameter xsi:type="ns1:LongParameter" name="Balance" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:LongParameter>
+            </ns1:StructParameter>
+            <ns1:BooleanParameter name="s_Valid">true</ns1:BooleanParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" namespace="@" name="Level" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:IntParameter>
+          </ns1:ParameterList>
+        </ns1:Operation>
+        <ns1:Operation name="Read" modifier="RPP_s_QoSOnTotalUsage">
+          <ns1:ParameterList>
+            <ns1:StringParameter name="CustomerId">126132745</ns1:StringParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="OfferProfileKey" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1</ns1:IntParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="Key" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">7</ns1:IntParameter>
+            <ns1:EnumerationValueParameter name="category">ONLINE</ns1:EnumerationValueParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="prefetchFilter" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">-1</ns1:IntParameter>
+            <ns1:LongParameter xsi:type="ns1:LongParameter" name="s_ActivationEndTime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">32503660199999</ns1:LongParameter>
+            <ns1:LongParameter xsi:type="ns1:LongParameter" name="s_ActivationStartTime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1445867076000</ns1:LongParameter>
+            <ns1:StringParameter name="s_CRMTitle">-</ns1:StringParameter>
+            <ns1:BooleanParameter name="s_CanBeSharedByMultipleRops">false</ns1:BooleanParameter>
+            <ns1:BooleanParameter name="s_InsertedViaBatch">false</ns1:BooleanParameter>
+            <ns1:StringParameter name="s_PackageId">MonthlyUsage1</ns1:StringParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="s_PeriodStartPoint" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">20</ns1:IntParameter>
+            <ns1:BooleanParameter name="s_PreActive">false</ns1:BooleanParameter>
+            <ns1:DateTimeParameter name="vValidFrom">2015-11-19T18:30:00.000Z</ns1:DateTimeParameter>
+            <ns1:SymbolicParameter name="vInvalidFrom">MAX_DATEANDTIME</ns1:SymbolicParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="s_FreeOfChargeModifyTasks" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:IntParameter>
+            <ns1:BooleanParameter name="s_Touched">true</ns1:BooleanParameter>
+            <ns1:EnumerationValueParameter name="bCategory">ONLINE</ns1:EnumerationValueParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="bSeriesId" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:IntParameter>
+            <ns1:DateTimeParameter name="bValidFrom">2015-10-26T13:07:29.000Z</ns1:DateTimeParameter>
+            <ns1:SymbolicParameter name="bInvalidFrom">MAX_DATEANDTIME</ns1:SymbolicParameter>
+            <ns1:LongParameter xsi:type="ns1:LongParameter" name="c_AccumulatedQosTillLastNotity" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:LongParameter>
+            <ns1:LongParameter xsi:type="ns1:LongParameter" name="c_Accumulatedprice" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:LongParameter>
+            <ns1:BooleanParameter name="c_DailyTicketNotificationSent">false</ns1:BooleanParameter>
+            <ns1:LongParameter xsi:type="ns1:LongParameter" name="c_FupAccumulationPostThrottle" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:LongParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="c_LastPercentageThresholdNotified" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:IntParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="c_RedirectIndex" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:IntParameter>
+            <ns1:BooleanParameter name="s_Active">true</ns1:BooleanParameter>
+            <ns1:ByteParameter xsi:type="ns1:ByteParameter" name="s_Error" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:ByteParameter>
+            <ns1:DateParameter name="s_ExpireDate">2999-12-31Z</ns1:DateParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="s_Info" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:IntParameter>
+            <ns1:LongParameter xsi:type="ns1:LongParameter" name="s_LastChargedPeriodicFee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:LongParameter>
+            <ns1:LongParameter xsi:type="ns1:LongParameter" name="s_LastHandledNotificationThreshold" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:LongParameter>
+            <ns1:LongParameter xsi:type="ns1:LongParameter" name="s_NextPeriodAct" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1487529000000</ns1:LongParameter>
+            <ns1:LongParameter xsi:type="ns1:LongParameter" name="s_OnTouchDate" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1487529000000</ns1:LongParameter>
+            <ns1:StructParameter name="s_PeriodicBonus_FU">
+              <ns1:LongParameter xsi:type="ns1:LongParameter" name="Balance" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:LongParameter>
+            </ns1:StructParameter>
+            <ns1:BooleanParameter name="s_Valid">true</ns1:BooleanParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" namespace="@" name="Level" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:IntParameter>
+          </ns1:ParameterList>
+        </ns1:Operation>
+        <ns1:Operation name="Read" modifier="RPP_s_QoSOnTotalUsage">
+          <ns1:ParameterList>
+            <ns1:StringParameter name="CustomerId">126132745</ns1:StringParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="OfferProfileKey" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1</ns1:IntParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="Key" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">8</ns1:IntParameter>
+            <ns1:EnumerationValueParameter name="category">ONLINE</ns1:EnumerationValueParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="prefetchFilter" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">-1</ns1:IntParameter>
+            <ns1:LongParameter xsi:type="ns1:LongParameter" name="s_ActivationEndTime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">32503746599999</ns1:LongParameter>
+            <ns1:LongParameter xsi:type="ns1:LongParameter" name="s_ActivationStartTime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1445867104000</ns1:LongParameter>
+            <ns1:StringParameter name="s_CRMTitle">-</ns1:StringParameter>
+            <ns1:BooleanParameter name="s_CanBeSharedByMultipleRops">false</ns1:BooleanParameter>
+            <ns1:BooleanParameter name="s_InsertedViaBatch">false</ns1:BooleanParameter>
+            <ns1:StringParameter name="s_PackageId">IRNOTIF</ns1:StringParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="s_PeriodStartPoint" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">20</ns1:IntParameter>
+            <ns1:BooleanParameter name="s_PreActive">false</ns1:BooleanParameter>
+            <ns1:DateTimeParameter name="vValidFrom">2015-11-19T18:30:00.000Z</ns1:DateTimeParameter>
+            <ns1:SymbolicParameter name="vInvalidFrom">MAX_DATEANDTIME</ns1:SymbolicParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="s_FreeOfChargeModifyTasks" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:IntParameter>
+            <ns1:BooleanParameter name="s_Touched">true</ns1:BooleanParameter>
+            <ns1:EnumerationValueParameter name="bCategory">ONLINE</ns1:EnumerationValueParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="bSeriesId" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:IntParameter>
+            <ns1:DateTimeParameter name="bValidFrom">2015-10-26T13:07:29.000Z</ns1:DateTimeParameter>
+            <ns1:SymbolicParameter name="bInvalidFrom">MAX_DATEANDTIME</ns1:SymbolicParameter>
+            <ns1:LongParameter xsi:type="ns1:LongParameter" name="c_AccumulatedQosTillLastNotity" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:LongParameter>
+            <ns1:LongParameter xsi:type="ns1:LongParameter" name="c_Accumulatedprice" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:LongParameter>
+            <ns1:BooleanParameter name="c_DailyTicketNotificationSent">false</ns1:BooleanParameter>
+            <ns1:LongParameter xsi:type="ns1:LongParameter" name="c_FupAccumulationPostThrottle" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:LongParameter>
+            <ns1:BooleanParameter name="c_IsBillCapThrottled">true</ns1:BooleanParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="c_LastPercentageThresholdNotified" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:IntParameter>
+            <ns1:StringParameter name="c_QoSAction">QOS_DEFAULT</ns1:StringParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="c_RedirectIndex" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:IntParameter>
+            <ns1:LongParameter xsi:type="ns1:LongParameter" name="c_VolumeRenew" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:LongParameter>
+            <ns1:BooleanParameter name="s_Active">true</ns1:BooleanParameter>
+            <ns1:ByteParameter xsi:type="ns1:ByteParameter" name="s_Error" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:ByteParameter>
+            <ns1:DateParameter name="s_ExpireDate">2999-12-31Z</ns1:DateParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" name="s_Info" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:IntParameter>
+            <ns1:LongParameter xsi:type="ns1:LongParameter" name="s_LastChargedPeriodicFee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:LongParameter>
+            <ns1:LongParameter xsi:type="ns1:LongParameter" name="s_LastHandledNotificationThreshold" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:LongParameter>
+            <ns1:LongParameter xsi:type="ns1:LongParameter" name="s_NextPeriodAct" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1487529000000</ns1:LongParameter>
+            <ns1:LongParameter xsi:type="ns1:LongParameter" name="s_OnTouchDate" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1487529000000</ns1:LongParameter>
+            <ns1:StructParameter name="s_PeriodicBonus_FU">
+              <ns1:LongParameter xsi:type="ns1:LongParameter" name="Balance" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:LongParameter>
+            </ns1:StructParameter>
+            <ns1:BooleanParameter name="s_Valid">true</ns1:BooleanParameter>
+            <ns1:IntParameter xsi:type="ns1:IntParameter" namespace="@" name="Level" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0</ns1:IntParameter>
+          </ns1:ParameterList>
+        </ns1:Operation>
+      </ns1:OperationResult>
+    </ns1:TransactionResult>
+  </ns1:CommandResult>
+</ns1:CommandResponseData>

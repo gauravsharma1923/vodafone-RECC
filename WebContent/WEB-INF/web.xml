@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+ <servlet>
+        <servlet-name>getReccStatus</servlet-name>
+        <servlet-class>recc.getReccStatus</servlet-class>
+ </servlet>
+  <servlet-mapping>
+       	<servlet-name>getReccStatus</servlet-name>
+        <url-pattern>/getReccStatus</url-pattern>
+ </servlet-mapping>
+
+ <servlet>
+       <servlet-name>getPackDetails</servlet-name>
+        <servlet-class>recc.getPackDetails</servlet-class>
+ </servlet>
+ <servlet-mapping>
+        <servlet-name>getPackDetails</servlet-name>
+        <url-pattern>/getPackDetails</url-pattern>
+ </servlet-mapping>
+ <servlet>
+       <servlet-name>UpdateFlag</servlet-name>
+        <servlet-class>recc.UpdateFlag</servlet-class>
+ </servlet>
+ <servlet-mapping>
+        <servlet-name>UpdateFlag</servlet-name>
+        <url-pattern>/UpdateFlag</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet>
+       <servlet-name>getPackValidity</servlet-name>
+        <servlet-class>recc.getPackValidity</servlet-class>
+ </servlet>
+<servlet>
+       <servlet-name>getPackNames</servlet-name>
+        <servlet-class>recc.getPackNames</servlet-class>
+ </servlet>
+<servlet-mapping>
+        <servlet-name>getPackNames</servlet-name>
+        <url-pattern>/getPackNames</url-pattern>
+ </servlet-mapping>
+ <servlet>
+        <servlet-name>getPackType</servlet-name>
+        <servlet-class>recc.getPackType</servlet-class>
+ </servlet>
+ <servlet-mapping>
+        <servlet-name>getPackType</servlet-name>
+        <url-pattern>/getPackType</url-pattern>
+ </servlet-mapping>
+
+
+<servlet-mapping>
+        <servlet-name>getPackValidity</servlet-name>
+        <url-pattern>/getPackValidity</url-pattern>
+ </servlet-mapping>
+
+  <servlet>
+       <servlet-name>getIvrData</servlet-name>
+        <servlet-class>recc.getIvrData</servlet-class>
+ </servlet>
+  <servlet-mapping>
+        <servlet-name>getIvrData</servlet-name>
+        <url-pattern>/getIvrData</url-pattern>
+ </servlet-mapping>
+  <servlet>
+        <servlet-name>getRedPlan</servlet-name>
+        <servlet-class>recc.getRedPlan</servlet-class>
+ </servlet>
+ <servlet-mapping>
+        <servlet-name>getRedPlan</servlet-name>
+        <url-pattern>/getRedPlan</url-pattern>
+ </servlet-mapping>
+
+ <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+ </session-config>
+ <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+ </welcome-file-list>
+ <error-page>
+       <!--<error-code>404</error-code>-->
+      <exception-type>java.lang.Throwable</exception-type>
+            <location>/error.jsp</location>
+            </error-page>
+</web-app>
